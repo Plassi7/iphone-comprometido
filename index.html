@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alerta de Seguridad</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #f00;
+      text-align: center;
+      padding-top: 100px;
+    }
+    .container {
+      max-width: 500px;
+      margin: auto;
+      border: 2px solid red;
+      padding: 30px;
+      border-radius: 10px;
+      background-color: #111;
+    }
+    .reveal {
+      color: #0f0;
+      font-size: 1.5em;
+      margin-top: 40px;
+      display: none;
+    }
+    button {
+      margin-top: 30px;
+      padding: 10px 20px;
+      font-size: 1em;
+      background: red;
+      border: none;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: darkred;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>⚠️ Tu iPhone ha sido comprometido ⚠️</h1>
+    <p>Se ha detectado un intento de acceso remoto no autorizado.</p>
+    <p>Requiere atención inmediata.</p>
+    <button onclick="document.querySelector('.reveal').style.display = 'block'">Solucionar ahora</button>
+    <div class="reveal">
+      <p>😄 ¡Tranquilo! Era una broma.</p>
+      <p>Tu iPhone está perfectamente seguro.</p>
+    </div>
+  </div>
+</body>
+</html>
+Agregar página de broma
